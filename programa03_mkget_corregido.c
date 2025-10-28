@@ -44,7 +44,7 @@ int main (int argc, char* const argv[])
  ssize_t num_bytes_leidos = 0;
  while( (num_bytes_leidos = read (socket_fd, buffer, 10000)) > 0 )
  {
-   printf("numero de bytes leidos=%d\n", num_bytes_leidos);
+   printf("numero de bytes leidos=%ld\n", num_bytes_leidos);
 
    /* Despues de leer la respuesta, se imprime a salida estandar */
    // fwrite (buffer, sizeof (char), num_bytes_leidos, stdout);
